@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>dollaros.vhd /c /m BUILD\dollaros.bin /e BUILD\exboot64.bin</LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>$(USERPROFILE)\OneDrive\Cybernated Solutions\$os\</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommand>$(USERPROFILE)\OneDrive\Cybernated Solutions\$os\Build\$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(USERPROFILE)\OneDrive\Cybernated Solutions\$os\</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>dollaros.vhd /c /m BUILD\dollaros.bin /e BUILD\exboot64.bin</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+</Project>
